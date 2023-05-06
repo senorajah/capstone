@@ -10,7 +10,7 @@ export default function Employer() {
         <Box
           sx={{
             display: "flex",
-            position: "absolute",
+                position: "absolute",
             zIndex: 999,
             width: "100%",
             height: "100%",
