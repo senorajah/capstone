@@ -14,7 +14,10 @@ import Verify from './UserAuth/Verify';
 import Bookmark from './Dashboard/Students/Bookmark'
 import UserContext from './api/context/context';
 import SDashboard from './Dashboard/Students/SDashboard';
-import Employer from './Dashboard/Employer/Employer';
+import EDashboard from './Dashboard/Employer/EDashboard'
+import Create from './Dashboard/Employer/Create';
+import EHome from './Dashboard/Employer/EHome';
+import Applicants from './Dashboard/Employer/applicantPage/Applicants';
 
 
 function App() {
@@ -70,7 +73,11 @@ const providervalue = useMemo(() => ({ user, setUser, page, setPage }), [user, s
         <Route path="Sguardian" element={<Guardian/>} />
         <Route path="Seducation" element={<Education/>} />
         <Route path="Bookmarks" element={<Bookmark/>} />
-        <Route path="Employer" element={<Employer/>} />
+        <Route path="EDashboard" element={<EDashboard/>} />
+        <Route path="EHome" element={<EHome/>} />
+        <Route path="Create" element={<Create/>} />
+        <Route path="applicants" element={<Applicants/>} />
+      
         <Route path="/activation/:uid/:token" element={<Verify/>} />
        
       </Routes>
