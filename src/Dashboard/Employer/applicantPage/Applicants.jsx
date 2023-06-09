@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import EmpAppbar from '../EmpAppbar'
 import backgroundImage from '../../../Images/bg2.jpg'
 import ApplicantsList from './ApplicantsList'
-
+import Settings from '../../Settings'
 
 const Applicants =(props) => {
 
@@ -29,6 +29,7 @@ const Applicants =(props) => {
   return(
     <div className="bg-cover bg-center absolute inset-0" style={{ backgroundImage: `url(${backgroundImage})`,display : props.hide }}>
     <EmpAppbar /> 
+    <Settings />
     <div className="bg-[#F7FAFF66] h-screen relative flex inset-0 pt-20 px-2">
     <div >
 

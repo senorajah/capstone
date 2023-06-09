@@ -6,6 +6,8 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import Settings from '../Settings';
+
 
 export default function Create(props) {
   const [title, setTitle] = useState('');
@@ -33,6 +35,7 @@ export default function Create(props) {
   return (
     <>
       <EmpAppbar />
+      <Settings />
       <div
         className="bg-cover bg-center absolute inset-0"
         style={{ backgroundImage: `url(${backgroundImage})`, display: props.hide }}

@@ -12,6 +12,7 @@ import backgroundImage from '../../Images/bg2.jpg'
 import Applicants from './applicantPage/Applicants';
 import Create from './Create';
 import EHome from './EHome';
+import Settings from '../Settings';
 
 export default function Employer(props  ) {
   const {page} = React.useContext(UserContext);
@@ -19,7 +20,7 @@ export default function Employer(props  ) {
     return (
       <div className="bg-cover bg-center absolute inset-0" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <EmpAppbar/>
-    
+      <Settings />
       <div className="bg-[#F7FAFF66] h-screen relative flex inset-0 pt-20 px-2">
       <div>
  <> <EHome  hide = {page.active === 'Home' ? null : "none"}/> 
